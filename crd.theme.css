@@ -1,0 +1,33 @@
+/**
+ * @name Compact Role Display
+ * @version 1.0.0
+ * @description Display the user's popup roles compact
+ * @author TheClashFruit
+ * @authorId 394888268446957569
+ * @source https://github.com/TheClashFruit/CompactRoleDisplay
+ * 
+ * @website https://theclashfruit.ga/
+*/
+div[class^="role-"] {
+  cursor: pointer;
+}
+
+div[class^="role-"] > div[class^="roleName-"] {
+  display: none;
+}
+
+div[class^="roleCircle-"] {
+  margin-right: 0;
+}
+
+div[class^="role-"]:hover {
+  width: fit-content;
+}
+
+div[class^="role-"]:hover > div[class^="roleCircle-"] {
+  margin-right: 4px;
+}
+
+div[class^="role-"]:hover > div[class^="roleName-"] {
+  display: block;
+}
